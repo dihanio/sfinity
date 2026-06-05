@@ -1,66 +1,83 @@
-# 🌟 SFINITY
-
-**SFINITY** adalah sebuah platform manajemen dan klasifikasi keuangan interaktif khusus untuk mahasiswa, terintegrasi dengan kecerdasan buatan (AI) untuk memberikan analisis pengeluaran dan rekomendasi finansial yang cerdas.
-
-Proyek ini dibangun menggunakan arsitektur yang terbagi menjadi tiga layanan utama (Frontend, Backend, dan AI API).
+<div align="center">
+  <h1>🌟 SFINITY</h1>
+  <p><b>Platform Manajemen & Klasifikasi Keuangan Mahasiswa Terintegrasi AI</b></p>
+  <p>SFINITY membantu mahasiswa melacak pengeluaran, mencapai target finansial, dan mendapatkan rekomendasi cerdas dari Artificial Intelligence berbasis gaya hidup mereka, semuanya dibalut dalam pengalaman yang seru (*gamified*).</p>
+</div>
 
 ---
 
-## 🏗️ Struktur Repositori
+## 📖 Tentang Proyek
+Mengelola keuangan bagi mahasiswa seringkali membingungkan. SFINITY hadir bukan hanya sebagai buku kas digital, melainkan sebagai asisten finansial pribadi. Dengan pendekatan **Gamification** (level, misi harian, lencana) dan **Artificial Intelligence** (klasifikasi tingkat bahaya finansial & proyeksi tabungan), mahasiswa didorong untuk lebih sadar dan bijak dalam mengelola uang mereka.
 
-Repositori ini menampung seluruh *source code* SFINITY yang terbagi ke dalam tiga folder (Anda bisa mengklik masing-masing folder untuk melihat dokumentasi detailnya):
+## ✨ Fitur Utama
+1. **🤖 AI Financial Health:** Mengklasifikasikan kondisi keuangan (Bahaya, Waspada, Stabil, Sangat Sehat) dan memberikan saran perbaikan spesifik.
+2. **🎯 Gamification & Missions:** Misi harian, perolehan XP, dan kenaikan level untuk memotivasi pengguna berhemat.
+3. **🧾 Receipt Scanner (OCR):** Pindai struk belanja dengan kamera untuk mencatat pengeluaran secara otomatis.
+4. **📊 Interactive Dashboard:** Analisis pengeluaran bulanan, distribusi kategori, dan grafik *cashflow*.
+5. **🎯 Goals & Budgeting:** Tetapkan target tabungan dan batas pengeluaran bulanan.
+6. **📚 Financial Education:** Akses ke artikel dan video literasi keuangan terkurasi.
+
+---
+
+## 🏗️ Arsitektur & Struktur Repositori
+
+Proyek ini dibangun menggunakan arsitektur *Monorepo* modern yang memisahkan tanggung jawab ke dalam 3 layanan (*services*):
 
 ### 1. 🎨 [Frontend (`sfinity-fe`)](./sfinity-fe)
-Aplikasi antarmuka pengguna (User Interface) yang interaktif, dinamis, dan dilengkapi elemen *gamification*.
-- **Tech Stack:** Next.js 16, React 19, Tailwind CSS, Framer Motion, GSAP, Zustand.
-- [Baca dokumentasi Frontend di sini](./sfinity-fe/README.md)
+Aplikasi antarmuka pengguna yang sangat interaktif dan memanjakan mata.
+- **Teknologi:** Next.js 16 (App Router), React 19, Tailwind CSS, Framer Motion, GSAP.
+- **Peran:** Menyajikan visualisasi data, antarmuka scanner struk, animasi gamifikasi, dan *state management* (Zustand & React Query).
+- [📖 Baca Dokumentasi Frontend](./sfinity-fe/README.md)
 
 ### 2. ⚙️ [Backend (`sfinity-be`)](./sfinity-be)
-Layanan API utama yang menangani manajemen data pengguna, autentikasi, manajemen transaksi, dan komunikasi *real-time*.
-- **Tech Stack:** Node.js, Express.js, MongoDB (Mongoose), Socket.io, JWT.
-- [Baca dokumentasi Backend di sini](./sfinity-be/README.md)
+Layanan API utama yang mengelola logika bisnis dan bertindak sebagai jembatan ke database dan AI.
+- **Teknologi:** Node.js, Express.js, MongoDB (Mongoose), Socket.io, JWT.
+- **Peran:** Autentikasi, manajemen transaksi, kalkulasi XP/Level, CRUD target/budget, dan *real-time updates*.
+- [📖 Baca Dokumentasi Backend](./sfinity-be/README.md)
 
-### 3. 🧠 [Kecerdasan Buatan / AI (`sfinity-ai`)](./sfinity-ai)
-Mesin cerdas (*Machine Learning Engine*) yang bertugas untuk mengklasifikasi status kesehatan finansial mahasiswa (Bahaya, Waspada, Stabil, Sangat Sehat), serta membuat simulasi/proyeksi tabungan.
-- **Tech Stack:** Python, FastAPI, TensorFlow/Keras, Scikit-Learn.
-- [Baca dokumentasi AI di sini](./sfinity-ai/README.md)
+### 3. 🧠 [Artificial Intelligence (`sfinity-ai`)](./sfinity-ai)
+Mesin analitik berbasis Machine Learning untuk *Decision Support System*.
+- **Teknologi:** Python, FastAPI, TensorFlow/Keras, Scikit-Learn.
+- **Peran:** Menerima profil dan data pengeluaran mahasiswa, lalu mengembalikan status klasifikasi, proyeksi 6 bulan ke depan, dan rekomendasi langkah darurat.
+- [📖 Baca Dokumentasi AI](./sfinity-ai/README.md)
 
 ---
 
-## 🚀 Cara Menjalankan SFINITY (Lokal)
+## 🚀 Panduan Menjalankan Keseluruhan Sistem
 
-Untuk menjalankan proyek ini secara utuh di komputer Anda, Anda perlu membuka **3 terminal terpisah** dan menjalankan masing-masing layanan secara bersamaan.
+Untuk menjalankan SFINITY secara lokal, Anda membutuhkan **Node.js**, **Python**, dan **MongoDB** terinstal di komputer Anda. Anda perlu membuka **3 tab terminal terpisah**.
 
-### Terminal 1: Backend
-Pastikan MongoDB sudah menyala, lalu masuk ke direktori Backend dan jalankan:
+### Terminal 1: Menjalankan Backend (API Utama)
+Pastikan MongoDB sudah berjalan (lokal atau Atlas).
 ```bash
 cd sfinity-be
 npm install
+# Buat file .env sesuai contoh (berisi PORT, MONGO_URI, JWT_SECRET)
 npm run dev
 ```
-*(Berjalan secara default di port 5000)*
+*Backend akan berjalan di `http://localhost:5000`*
 
-### Terminal 2: AI (Machine Learning)
-Masuk ke direktori AI, pastikan dependensi Python sudah terinstal, lalu jalankan API:
+### Terminal 2: Menjalankan AI Engine (FastAPI)
 ```bash
 cd sfinity-ai
+# Sangat disarankan membuat virtual environment (venv)
 pip install -r requirements.txt
 python app.py
 ```
-*(Berjalan secara default di port 8000)*
+*AI Engine akan berjalan di `http://localhost:8000`*
 
-### Terminal 3: Frontend
-Masuk ke direktori Frontend, dan jalankan tampilan web:
+### Terminal 3: Menjalankan Frontend (Next.js)
 ```bash
 cd sfinity-fe
 npm install
+# Buat file .env sesuai contoh (NEXT_PUBLIC_API_URL, dll)
 npm run dev
 ```
-*(Berjalan secara default di port 3000)*
+*Aplikasi web akan berjalan di `http://localhost:3000`*
 
-Setelah ketiga layanan di atas berstatus **Running**, Anda bisa membuka aplikasi secara utuh melalui browser di **http://localhost:3000** 🚀
+🌟 **Selesai!** Buka `http://localhost:3000` di browser untuk mulai menggunakan SFINITY.
 
 ---
 
 ## 👥 Pengembang
-- **Diha Anfeu Nio Julaynda**
+Dikembangkan oleh **Diha Anfeu Nio Julaynda** - Mahasiswa Universitas Negeri Surabaya (UNESA).
