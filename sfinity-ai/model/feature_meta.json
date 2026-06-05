@@ -1,0 +1,64 @@
+{
+  "RAW_NUM": [
+    "usia",
+    "pendapatan",
+    "bantuan",
+    "pendidikan",
+    "tempat_tinggal",
+    "makanan",
+    "transportasi",
+    "buku",
+    "hiburan",
+    "perawatan",
+    "teknologi",
+    "kesehatan",
+    "lainnya",
+    "saving_ratio",
+    "dependency_ratio",
+    "ess_ratio",
+    "disc_ratio",
+    "hiburan_ratio",
+    "teknologi_ratio",
+    "pressure_index"
+  ],
+  "RAW_CAT": [
+    "gender",
+    "year_in_school",
+    "major",
+    "preferred_payment_method"
+  ],
+  "label_classes": [
+    "Bahaya",
+    "Sangat Sehat",
+    "Stabil",
+    "Waspada"
+  ],
+  "n_features": 35,
+  "n_classes": 4,
+  "SPENDING_COLS": [
+    "pendidikan",
+    "tempat_tinggal",
+    "makanan",
+    "transportasi",
+    "buku",
+    "hiburan",
+    "perawatan",
+    "teknologi",
+    "kesehatan",
+    "lainnya"
+  ],
+  "ESS_COLS": [
+    "pendidikan",
+    "tempat_tinggal",
+    "makanan",
+    "transportasi",
+    "kesehatan",
+    "buku"
+  ],
+  "NON_ESS_COLS": [
+    "hiburan",
+    "perawatan",
+    "teknologi",
+    "lainnya"
+  ]
+}

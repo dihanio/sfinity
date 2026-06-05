@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+*.egg
+.eggs/
+
+# Virtual Environment
+venv/
+.venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Model artifacts (large files — track via Git LFS or exclude)
+# model/*.keras
+# model/*.pkl
+
+# TensorFlow / Logs
+logs/
+*.h5
+
+# Jupyter
+.ipynb_checkpoints/

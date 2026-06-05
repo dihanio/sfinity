@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  sfinity-ai:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      # Mount model folder to dynamically update models without rebuilding image
+      - ./model:/app/model
+    environment:
+      - TF_CPP_MIN_LOG_LEVEL=2
+    restart: always
