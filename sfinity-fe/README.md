@@ -11,7 +11,7 @@ SFINITY Frontend adalah aplikasi web berbasis **Next.js** yang dirancang untuk m
 
 - **📊 Dasbor Analitik Visual:** Menampilkan grafik interaktif (menggunakan Recharts) untuk *cashflow* bulanan, alokasi pengeluaran, dan kesehatan finansial.
 - **🎮 Gamification System:** Pengguna bisa mendapatkan XP (Experience Points), naik level, dan mengumpulkan lencana (*badges*) setelah menyelesaikan misi harian seperti mencatat pengeluaran atau membaca artikel edukasi.
-- **📸 AI Receipt Scanner:** Terintegrasi dengan fitur kamera (Tesseract.js OCR) yang memungkinkan pengguna memindai struk belanja fisik agar nominal dan kategori terisi secara otomatis tanpa harus mengetik manual.
+- **📸 Receipt Scanner:** Terintegrasi dengan fitur kamera (Tesseract.js OCR) yang memungkinkan pengguna memindai struk belanja fisik agar nominal dan kategori terisi secara otomatis tanpa harus mengetik manual.
 - **✨ Animasi Premium:** Transisi halaman dan komponen dibuat hidup menggunakan kombinasi **Framer Motion** dan **GSAP**.
 - **🤖 Integrasi AI:** Tampilan visual untuk laporan status kesehatan finansial (Bahaya, Waspada, Stabil, Sangat Sehat) yang ditarik langsung dari layanan *Machine Learning*.
 - **📱 Responsif:** Dioptimalkan secara penuh untuk penggunaan di berbagai ukuran layar (Desktop, Tablet, dan Mobile).

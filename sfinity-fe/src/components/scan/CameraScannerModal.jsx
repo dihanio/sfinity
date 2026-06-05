@@ -232,7 +232,7 @@ const addScan =
     setLoading(true);
 
     toast.loading(
-      "AI sedang scan struk..."
+      "Sedang Scan...ruk..."
     );
 
     try {

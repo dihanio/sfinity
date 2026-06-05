@@ -403,7 +403,7 @@ const filtered =
                     text-slate-500
                   "
                 >
-                  Riwayat hasil AI OCR
+                  Riwayat hasil OCR
                 </p>
 
               </div>

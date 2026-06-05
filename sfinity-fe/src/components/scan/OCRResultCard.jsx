@@ -421,7 +421,7 @@ export default function OCRResultCard() {
                   text-slate-500
                 "
               >
-                AI OCR realtime analysis
+                OCR realtime analysis
               </p>
 
             </div>
@@ -458,7 +458,7 @@ export default function OCRResultCard() {
                     ${confidenceColor}
                   `}
                 >
-                  {confidence}% AI
+                  {confidence}%
                 </span>
 
               </div>
@@ -513,7 +513,7 @@ export default function OCRResultCard() {
                 text-slate-900
               "
             >
-              AI Sedang Scan...
+              Sedang Scan...
             </h3>
 
             <p
@@ -582,7 +582,7 @@ export default function OCRResultCard() {
                 text-slate-500
               "
             >
-              Upload receipt untuk memulai OCR AI
+              Upload receipt untuk memulai OCR
             </p>
 
           </div>
@@ -675,7 +675,7 @@ export default function OCRResultCard() {
                       text-emerald-600
                     "
                   >
-                    AI berhasil membaca receipt
+                    Berhasil membaca receipt
                   </p>
 
                 </div>
@@ -709,14 +709,14 @@ export default function OCRResultCard() {
                     text-violet-700
                   "
                 >
-                  AI Categorized
+                  Auto Categorized
                 </span>
 
               </div>
 
             </div>
 
-            {/* AI INSIGHT */}
+            {/* INSIGHT */}
             <div
               className="
                 mt-6
@@ -750,7 +750,7 @@ export default function OCRResultCard() {
                     text-blue-700
                   "
                 >
-                  AI Spending Insight
+                  Spending Insight
                 </h3>
 
               </div>
@@ -988,7 +988,7 @@ export default function OCRResultCard() {
                       text-slate-500
                     "
                   >
-                    AI Auto Category
+                    Auto Category
                   </p>
 
                 </div>

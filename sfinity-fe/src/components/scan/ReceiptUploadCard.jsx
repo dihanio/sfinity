@@ -362,7 +362,7 @@ ReceiptUploadCard() {
       setLoading(true);
 
       toast.loading(
-        "AI sedang membaca struk..."
+        "Sedang membaca struk..."
       );
 
       /*
@@ -420,7 +420,7 @@ ReceiptUploadCard() {
         toast.dismiss();
 
         toast.error(
-          "Total gagal terbaca AI"
+          "Total gagal terbaca OCR"
         );
 
         setResult(result);
@@ -515,7 +515,7 @@ ReceiptUploadCard() {
               text-slate-900
             "
           >
-            AI Receipt Scanner
+            Receipt Scanner
           </h2>
 
           <p
@@ -525,7 +525,7 @@ ReceiptUploadCard() {
             "
           >
             Scan struk otomatis
-            menggunakan AI OCR
+            menggunakan OCR
           </p>
 
         </div>
@@ -695,7 +695,7 @@ ReceiptUploadCard() {
                       text-slate-900
                     "
                   >
-                    AI Scanning...
+                    Scanning...
                   </h3>
 
                 </div>
