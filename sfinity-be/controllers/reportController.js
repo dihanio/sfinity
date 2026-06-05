@@ -321,14 +321,14 @@ export const getReportAnalytics =
       AI INSIGHT
       */
       let insight =
-        "Keuangan cukup stabil.";
+        "Secara keseluruhan, metrik keuanganmu cukup stabil bulan ini. Terus pertahankan kedisiplinan dalam mencatat setiap transaksi dan pastikan kamu mengalokasikan sisa dana ke instrumen investasi agar nilainya tidak tergerus inflasi.";
 
       if (
         savingRate < 20
       ) {
 
         insight =
-          "Saving rate rendah. Kurangi pengeluaran tidak penting.";
+          "Tingkat tabungan (Saving Rate) kamu bulan ini kurang dari 20%. Ini adalah sinyal bahwa kamu terlalu banyak menghabiskan uang untuk hal-hal konsumtif. Lakukan evaluasi pada daftar pengeluaranmu dan pangkas hal yang tidak begitu penting.";
 
       }
 
@@ -338,7 +338,7 @@ export const getReportAnalytics =
       ) {
 
         insight =
-          "Pengeluaran melebihi pemasukan bulan ini.";
+          "Peringatan: Total pengeluaranmu telah melebihi total pemasukan bulan ini (Defisit). Kamu hidup di atas kemampuan finansialmu. Segera hentikan pengeluaran yang tidak mendesak dan buat anggaran super ketat untuk bulan depan agar tidak terjerat utang.";
 
       }
 

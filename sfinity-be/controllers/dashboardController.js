@@ -790,26 +790,26 @@ AI INSIGHT
 */
 
 let insight =
-  "Keuangan kamu berada dalam kondisi sehat.";
+  "Arus kas kamu saat ini tergolong stabil dan sehat. Pertahankan kebiasaan baik ini dengan terus memantau pengeluaran agar selalu berada di bawah pendapatan bulananmu, serta jangan lupa untuk konsisten mengalokasikan sisa dana untuk tabungan dan investasi jangka panjang.";
 
 if (foodRatio > 40) {
 
   insight =
-    "Pengeluaran Food terlalu tinggi dibanding total pengeluaran.";
+    "Porsi pengeluaran untuk makan (Food) tampak terlalu tinggi, melebihi 40% dari total pengeluaranmu. Cobalah untuk lebih sering memasak sendiri atau membawa bekal dari rumah guna memangkas biaya konsumsi harian ini.";
 
 }
 
 if (entertainmentRatio > 20) {
 
   insight =
-    "Pengeluaran Entertainment cukup tinggi. Pertimbangkan mengurangi hiburan untuk meningkatkan tabungan.";
+    "Alokasi dana untuk hiburan (Entertainment) menyita lebih dari 20% anggaranmu. Angka ini cukup berisiko. Pertimbangkan untuk mengurangi frekuensi nongkrong, menonton bioskop, atau berlangganan layanan streaming yang jarang dipakai.";
 
 }
 
 if (savingRatio < 15) {
 
   insight =
-    "Saving Ratio masih rendah. Cobalah mengurangi pengeluaran yang tidak terlalu penting.";
+    "Rasio tabungan (Saving Ratio) kamu masih berada di bawah batas ideal 15%. Hal ini sangat rawan jika terjadi keadaan darurat. Segera evaluasi dan pangkas pengeluaran non-esensial agar porsi tabunganmu bisa ditingkatkan secara signifikan di bulan depan.";
 
 }
       /*
