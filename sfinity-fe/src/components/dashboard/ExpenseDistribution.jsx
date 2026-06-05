@@ -1,6 +1,7 @@
 "use client";
 
-import { useState, useEffect } from "react";`nimport { translateCategory } from "@/utils/translateCategory";
+import { useState, useEffect } from "react";
+import { translateCategory } from "@/utils/translateCategory";
 
 import {
 
@@ -235,7 +236,7 @@ ExpenseDistribution() {
                       ) => (
 
                         <Cell
-                          key={translateCategory(item.name)}
+                          key={item.name}
                           fill={
                             COLORS[
                               index %
