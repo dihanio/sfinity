@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect } from "react";`nimport { translateCategory } from "@/utils/translateCategory";
 
 import {
 
@@ -188,7 +188,7 @@ ExpenseDistribution() {
               text-slate-900
             "
           >
-            {topCategory.name}
+            {translateCategory(topCategory.name)}
           </h3>
 
         </div>
@@ -235,7 +235,7 @@ ExpenseDistribution() {
                       ) => (
 
                         <Cell
-                          key={item.name}
+                          key={translateCategory(item.name)}
                           fill={
                             COLORS[
                               index %
@@ -327,7 +327,7 @@ ExpenseDistribution() {
                             capitalize
                           "
                         >
-                          {item.name}
+                          {translateCategory(item.name)}
                         </h3>
 
                         <p

@@ -240,7 +240,7 @@ setUser(
             text-slate-700
           "
         >
-          AI Feed
+          Artikel Pilihan
         </div>
 
       </div>

@@ -189,7 +189,7 @@ export default function DailyCheckin() {
                 text-slate-900
               "
             >
-              Daily Check-in
+              Check-in Harian
             </h2>
 
             <p
@@ -198,7 +198,7 @@ export default function DailyCheckin() {
                 text-slate-500
               "
             >
-              Streak{" "}
+              Beruntun{" "}
 
               <span
                 className="

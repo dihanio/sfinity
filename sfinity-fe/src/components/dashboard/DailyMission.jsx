@@ -267,7 +267,7 @@ const updatedMissions =
               text-slate-900
             "
           >
-            Daily Missions
+            Misi Harian
           </h2>
         </div>
       </div>
@@ -288,7 +288,7 @@ const updatedMissions =
               text-slate-500
             "
           >
-            Progress Mission
+            Progres Misi
           </p>
 
           <p
