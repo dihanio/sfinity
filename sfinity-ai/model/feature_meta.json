@@ -13,13 +13,28 @@
     "teknologi",
     "kesehatan",
     "lainnya",
+    "financial_score",
+    "rasio_pengeluaran",
+    "sisa_uang",
+    "total_pemasukan",
+    "total_pengeluaran",
     "saving_ratio",
+    "saving_deficit",
     "dependency_ratio",
     "ess_ratio",
     "disc_ratio",
     "hiburan_ratio",
     "teknologi_ratio",
-    "pressure_index"
+    "pressure_index",
+    "income_per_spend",
+    "food_income_ratio",
+    "housing_income_ratio",
+    "education_income_ratio",
+    "score_x_saving",
+    "log_sisa_uang",
+    "log_pendapatan",
+    "log_non_ess",
+    "surplus_flag"
   ],
   "RAW_CAT": [
     "gender",
@@ -33,7 +48,7 @@
     "Stabil",
     "Waspada"
   ],
-  "n_features": 35,
+  "n_features": 50,
   "n_classes": 4,
   "SPENDING_COLS": [
     "pendidikan",
