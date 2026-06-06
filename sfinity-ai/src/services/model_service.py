@@ -32,6 +32,7 @@ class ModelService:
         self.model = tf.keras.models.load_model(
             MODEL_PATH,
             custom_objects={"ResidualBlock": ResidualBlock},
+            compile=False,
         )
         self.preprocessor = joblib.load(PREPROCESSOR_PATH)
         self.label_enc    = joblib.load(LABEL_ENC_PATH)
