@@ -7,7 +7,7 @@ import {
 
   updateProfile,
 
-} from "../controllers/UserController.js";
+} from "../controllers/userController.js";
 
 import {
 

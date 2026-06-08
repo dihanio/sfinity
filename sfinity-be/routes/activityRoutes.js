@@ -3,7 +3,7 @@ from "express";
 
 import {
   getActivities,
-} from "../controllers/ActivityController.js";
+} from "../controllers/activityController.js";
 
 import {
   protect,

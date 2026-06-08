@@ -1,5 +1,5 @@
 import Activity
-from "../models/Activity.js";
+from "../models/ActivityModel.js";
 
 export const createActivity =
   async ({

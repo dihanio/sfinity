@@ -1,5 +1,5 @@
 import User
-from "../models/UserModels.js";
+from "../models/UserModel.js";
 
 import {
   calculateLevel,
