@@ -1,3 +1,8 @@
+import crypto from "crypto";
+if (!global.crypto) {
+  global.crypto = crypto.webcrypto;
+}
+
 import dotenv from "dotenv";
 
 import http from "http";
