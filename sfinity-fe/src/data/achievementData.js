@@ -198,7 +198,7 @@ export const achievementList = [
     description: "Check-in 14 hari",
 
     image:
-      "/achievements/disiplin-tinggi.png",
+      "/achievements/pejuang-xp.png",
 
     xp: 300,
 
@@ -238,7 +238,7 @@ export const achievementList = [
     description: "Capai level 5",
 
     image:
-      "/achievements/level-5.png",
+      "/achievements/legenda-finansial.png",
 
     xp: 150,
 
@@ -255,7 +255,7 @@ export const achievementList = [
     description: "Capai level 10",
 
     image:
-      "/achievements/level-10.png",
+      "/achievements/tidak-terkalahkan.png",
 
     xp: 350,
 
