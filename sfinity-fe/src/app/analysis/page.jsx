@@ -248,7 +248,6 @@ export default function AnalysisPage() {
                         <option value="">Pilih Gender</option>
                         <option value="Male">Laki-laki (Male)</option>
                         <option value="Female">Perempuan (Female)</option>
-                        <option value="Non-binary">Non-binary</option>
                       </select>
                     </div>
 
