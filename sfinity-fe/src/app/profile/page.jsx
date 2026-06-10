@@ -22,6 +22,8 @@ from "@/components/gamification/LevelProgressCard";
 import LevelBadges
 from "@/components/gamification/LevelBadges";
 
+import FAQSection from "@/components/profile/FAQSection";
+
 import AchievementModal
 from "@/components/achievement/AchievementModal";
 
@@ -264,6 +266,9 @@ export default function ProfilePage() {
           </div>
 
         </div>
+
+        {/* FAQ SECTION */}
+        <FAQSection />
 
       </div>
 
