@@ -130,7 +130,7 @@ export const getAIPrediction = async (req, res) => {
     console.log("Sending payload to AI service:", aiPayload);
 
     // Call FastAPI AI service running on localhost:8000 (or configured domain)
-    const aiBaseUrl = process.env.AI_SERVICE_URL || "https://sfinity-ai.onrender.com";
+    const aiBaseUrl = process.env.AI_SERVICE_URL || "http://localhost:8000";
     const aiResponse = await fetch(`${aiBaseUrl}/predict`, {
       method: "POST",
       headers: {
