@@ -77,6 +77,25 @@ class ModelService:
         disc_r    = ne / (total_exp + eps)
         user_df["pressure_index"]   = rasio_exp * (1 + disc_r)
 
+        user_df["total_pemasukan"] = total_inc
+        user_df["total_pengeluaran"] = total_exp
+        user_df["sisa_uang"] = sisa
+        user_df["saving_deficit"] = abs(sisa) if sisa < 0 else 0
+        user_df["rasio_pengeluaran"] = rasio_exp
+        user_df["income_per_spend"] = total_inc / (total_exp + eps)
+        user_df["food_income_ratio"] = user.get("makanan", 0) / (total_inc + eps)
+        user_df["housing_income_ratio"] = user.get("tempat_tinggal", 0) / (total_inc + eps)
+        user_df["education_income_ratio"] = user.get("pendidikan", 0) / (total_inc + eps)
+        
+        # Approximate financial score logic
+        financial_score = 100 - (rasio_exp * 100)
+        user_df["financial_score"] = financial_score if financial_score > 0 else 0
+        user_df["score_x_saving"] = user_df["financial_score"] * user_df["saving_ratio"]
+        user_df["log_sisa_uang"] = np.log1p(max(0, sisa))
+        user_df["log_pendapatan"] = np.log1p(total_inc)
+        user_df["log_non_ess"] = np.log1p(ne)
+        user_df["surplus_flag"] = 1 if sisa > 0 else 0
+
         return user_df
 
     # ── Inference ─────────────────────────────────────────────────────────────
